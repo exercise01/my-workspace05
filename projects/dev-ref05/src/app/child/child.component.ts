@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, input } from '@angular/core';
 
 @Component({
   selector: 'app-child',
@@ -7,6 +7,8 @@ import { Component, Input } from '@angular/core';
   styleUrl: './child.component.scss'
 })
 export class ChildComponent {
-  @Input() buttonText: string = 'BUTTON';
-  
+  @Input() buttonText: string = '';
+
+  //public firstName = input<string>("Yamada");   
+  public firstName = input.required<string>();             // Signal<string|undefined>
 }

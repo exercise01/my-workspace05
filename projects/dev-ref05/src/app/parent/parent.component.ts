@@ -8,5 +8,6 @@ import { ChildComponent } from '../child/child.component';
   styleUrl: './parent.component.scss'
 })
 export class ParentComponent {
+  
 
 }
