@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { ParentEffectComponent } from './parent-effect/parent-effect.component';
+import { ParentComponent } from './parent/parent.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, ParentEffectComponent],
+  imports: [RouterOutlet, ParentComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

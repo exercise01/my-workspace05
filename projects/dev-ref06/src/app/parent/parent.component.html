@@ -1,0 +1,17 @@
+
+<app-child 
+[a]=50
+[b]=50
+
+[count]="parentCount" 
+
+[value]="parentValue">
+
+</app-child>
+
+<p>-----------------</p>
+<h3>Decolator</h3>
+    <button (click)="incrementCount()">Increment Count</button>
+
+<h3>Signal</h3>
+    <button (click)="incrementValue()">Increment Value</button>

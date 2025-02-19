@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { EffectExampleComponent } from './effect-example.component';
+import { ParentComponent } from './parent.component';
 
-describe('EffectExampleComponent', () => {
-  let component: EffectExampleComponent;
-  let fixture: ComponentFixture<EffectExampleComponent>;
+describe('ParentEffectComponent', () => {
+  let component: ParentComponent;
+  let fixture: ComponentFixture<ParentComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [EffectExampleComponent]
+      imports: [ParentComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(EffectExampleComponent);
+    fixture = TestBed.createComponent(ParentComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
