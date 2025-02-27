@@ -3,10 +3,11 @@ import { RouterOutlet } from '@angular/router';
 import { Parent1Component } from './parent1/parent1.component';
 import { Parent2Component } from "./parent2/parent2.component";
 import { Parent3Component } from "./parent3/parent3.component";
+import { Parent4Component } from "./parent4/parent4.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Parent1Component, Parent2Component, Parent3Component],
+  imports: [RouterOutlet, Parent1Component, Parent2Component, Parent3Component, Parent4Component],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
