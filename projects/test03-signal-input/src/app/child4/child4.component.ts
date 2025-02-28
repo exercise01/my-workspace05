@@ -9,11 +9,12 @@ import { Component, input, output } from '@angular/core';
 })
 export class Child4Component {
   value = input<string>('');
-//@Output() valueChange = new EventEmitter<string>();
-  valueChange = output<string>();
 
-onInput(event: Event) {
-const inputValue = (event.target as HTMLInputElement).value;
-this.valueChange.emit(inputValue);
+  valueChange = output<string>();
+  //@Output() valueChange = new EventEmitter<string>();
+
+  onInput(event: Event) {
+   const inputValue = (event.target as HTMLInputElement).value;
+   this.valueChange.emit(inputValue);
  }
 }

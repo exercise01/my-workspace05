@@ -10,5 +10,4 @@ import { Component,input} from '@angular/core';
 })
 export class Child2Component {
  isLoading = input<boolean>(false);
-
 }

@@ -10,7 +10,7 @@ import { Child3Component } from '../child3/child3.component';
 export class Parent3Component {
   selectedItemId = signal<number | null>(null);
 
-changeSelectedItem() {
-this.selectedItemId.set(456); // 例としてアイテムID 123 を選択
+  changeSelectedItem() {
+  this.selectedItemId.set(456); // 例としてアイテムID 123 を選択
  }
 }

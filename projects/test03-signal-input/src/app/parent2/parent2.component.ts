@@ -11,15 +11,14 @@ import { Child2Component } from '../child2/child2.component';
 export class Parent2Component {
   isLoading = signal<boolean>(false);
 
-startLoading() {
-this.isLoading.set(true);
-setTimeout(() => {
-this.isLoading.set(false);
-}, 3000); // 3秒後にローディング終了
-}
+  startLoading() {
+   this.isLoading.set(true);
+   setTimeout(() => {
+   this.isLoading.set(false);
+    }, 3000); 
+  }
 
-stopLoading() {
-this.isLoading.set(false);
-}
-
+  stopLoading() {
+   this.isLoading.set(false);
+   }
 }
